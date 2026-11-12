@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Amazonほしい物リストの作成と招待リンクの共有手順</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d1d1b; --sub: #5f5e59;
+    --line: #e3e1da; --accent: #b4540a; --btn: #f7d94c; --btn-ink: #1d1d1b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171715; --card: #22221f; --ink: #f0efe9; --sub: #a9a79f;
+      --line: #36352f; --accent: #f0a35e; --btn: #f7d94c; --btn-ink: #1d1d1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    font-size: 17px; line-height: 1.75;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 28px 18px 64px; }
+  h1 { font-size: 1.5rem; line-height: 1.4; margin: 0 0 12px; }
+  .lead { color: var(--sub); margin: 0 0 24px; }
+  .start {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px; margin-bottom: 32px;
+  }
+  .start p { margin: 0 0 14px; }
+  .start small { display: block; color: var(--sub); margin-top: 12px; line-height: 1.6; }
+  .btn {
+    display: block; text-align: center; text-decoration: none; font-weight: 700;
+    background: var(--btn); color: var(--btn-ink); border-radius: 999px; padding: 14px 16px;
+  }
+  a { color: var(--accent); }
+  h2 { font-size: 1.15rem; margin: 36px 0 14px; }
+  ol.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+  ol.steps > li {
+    counter-increment: step; background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px; margin-bottom: 14px;
+  }
+  ol.steps h3 { font-size: 1.05rem; line-height: 1.5; margin: 0 0 6px; display: flex; gap: 10px; }
+  ol.steps h3::before {
+    content: counter(step); flex: none; width: 1.7em; height: 1.7em; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: .9em;
+    display: inline-flex; align-items: center; justify-content: center; margin-top: .05em;
+  }
+  ol.steps p { margin: 0; }
+  ol.steps img {
+    display: block; width: 100%; height: auto; margin-top: 14px;
+    border: 1px solid var(--line); border-radius: 10px; background: #fff;
+  }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  th { font-size: .85rem; color: var(--sub); font-weight: 600; }
+  td:first-child { white-space: nowrap; font-weight: 700; }
+  ul.notes { padding-left: 1.2em; margin: 16px 0 0; }
+  ul.notes li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Amazonほしい物リストの作成と招待リンクの共有手順</h1>
+  <p class="lead">スマホのブラウザでAmazonを開き、ほしい物リストを新しく作って、一緒に編集できる招待リンクを送るまでの手順です。所要時間は2〜3分です。</p>
+
+  <div class="start">
+    <p>下のボタンを開くと、手順3の「購入品リストとレジストリ」画面に直接入れます。Amazonにログインした状態で開いてください。</p>
+    <a class="btn" href="https://www.amazon.co.jp/hz/wishlist/ls" target="_blank" rel="noopener">ほしい物リストのページを開く</a>
+    <small>うまく開かないときは、<a href="https://www.amazon.co.jp/" target="_blank" rel="noopener">Amazonトップ</a>から手順1の通りに進めば同じ画面に着きます。</small>
+  </div>
+
+  <h2>手順</h2>
+  <ol class="steps">
+    <li>
+      <h3>右上のアカウント名をタップ</h3>
+      <p>Amazonトップの右上にある「○○さん」と人型アイコンの部分をタップします。</p>
+      <img src="img/step1.jpg" alt="Amazonトップ右上のアカウント名の位置" width="1000" height="142">
+    </li>
+    <li>
+      <h3>「ほしい物リスト」を選ぶ</h3>
+      <p>開いたメニューの「アカウントサービス」にある「ほしい物リスト」をタップします。</p>
+      <img src="img/step2.jpg" alt="メニュー内の「ほしい物リスト」" width="1000" height="555" loading="lazy">
+    </li>
+    <li>
+      <h3>右上の「＋」をタップ</h3>
+      <p>「購入品リストとレジストリ」の見出しの右にある丸い「＋」ボタンをタップします。</p>
+      <img src="img/step3.jpg" alt="「購入品リストとレジストリ」右の＋ボタン" width="1000" height="95" loading="lazy">
+    </li>
+    <li>
+      <h3>リスト名を入れて「リストを作成」</h3>
+      <p>リスト名を入力し、黄色の「リストを作成」ボタンをタップします。名前は後から変更できます。</p>
+      <img src="img/step4.jpg" alt="リスト名の入力欄と「リストを作成」ボタン" width="1000" height="364" loading="lazy">
+    </li>
+    <li>
+      <h3>「招待」をタップ</h3>
+      <p>作成したリストが開くので、リスト名の下にある「招待」ボタンをタップします。</p>
+      <img src="img/step5.jpg" alt="リスト名の下の「招待」ボタン" width="1000" height="355" loading="lazy">
+    </li>
+    <li>
+      <h3>「表示して編集」を選ぶ</h3>
+      <p>「他のユーザーを招待」の画面で「表示して編集」をタップします。相手にも商品を追加・削除してもらえるリンクになります。</p>
+      <img src="img/step6.jpg" alt="「表示のみ」と「表示して編集」の選択画面" width="1000" height="295" loading="lazy">
+    </li>
+    <li>
+      <h3>リンクをコピーして送る</h3>
+      <p>表示された招待リンクをコピーし、LINEやメールで相手に送れば完了です。</p>
+    </li>
+  </ol>
+
+  <h2>補足</h2>
+  <table>
+    <tr><th>招待の種類</th><th>相手ができること</th></tr>
+    <tr><td>表示のみ</td><td>リストを見るだけ。編集はできない</td></tr>
+    <tr><td>表示して編集</td><td>リストに商品を追加・削除できる</td></tr>
+  </table>
+  <ul class="notes">
+    <li>リストは作成した時点では非公開です。リンクを送った相手だけが開けます。</li>
+    <li>リンクを知っている人は誰でも開けるので、送る相手は絞ってください。</li>
+    <li>画面はスマホのブラウザ版です。Amazonアプリではボタンの位置が少し違うことがあります。</li>
+  </ul>
+</main>
+</body>
+</html>
