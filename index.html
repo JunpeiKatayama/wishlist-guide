@@ -55,6 +55,9 @@
     display: block; width: 100%; height: auto; margin-top: 14px;
     border: 1px solid var(--line); border-radius: 10px; background: #fff;
   }
+  details.fallback { margin-top: 28px; background: transparent; }
+  details.fallback summary { cursor: pointer; font-weight: 700; padding: 14px 4px; color: var(--accent); }
+  details.fallback > p { margin: 0 0 14px; color: var(--sub); }
   table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
   th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
   tr:last-child td { border-bottom: 0; }
@@ -67,39 +70,19 @@
 <body>
 <main>
   <h1>Amazonほしい物リストの作成と招待リンクの共有手順</h1>
-  <p class="lead">スマホのブラウザでAmazonを開き、ほしい物リストを新しく作って、一緒に編集できる招待リンクを送るまでの手順です。所要時間は2〜3分です。</p>
+  <p class="lead">スマホのブラウザでAmazonのほしい物リストを開き、名前の設定を確認してから、一緒に編集できる招待リンクを送るまでの手順です。所要時間は2〜3分です。</p>
 
   <div class="start">
-    <p>まずAmazonのトップを開き、ログインした状態で手順1から進めてください。</p>
-    <a class="btn" href="https://www.amazon.co.jp/" target="_blank" rel="noopener">Amazonを開く</a>
-    <small>すでにあるリストを見たいときは<a href="https://www.amazon.co.jp/hz/wishlist/ls" target="_blank" rel="noopener">ほしい物リストのページ</a>から。こちらは既定のリストが開くので、新しく作る場合は手順1からどうぞ。</small>
+    <p>下のボタンを開くと、自分のほしい物リストが表示されます。Amazonにログインした状態で開いてください。</p>
+    <a class="btn" href="https://www.amazon.co.jp/hz/wishlist/ls" target="_blank" rel="noopener">ほしい物リストを開く</a>
+    <small>リストが表示されないときは、ページ下の「リストがまだない・新しく作りたい場合」を先に進めてください。</small>
   </div>
 
   <h2>手順</h2>
   <ol class="steps">
     <li>
-      <h3>右上のアカウント名をタップ</h3>
-      <p>Amazonトップの右上にある「○○さん」と人型アイコンの部分をタップします。</p>
-      <img src="img/step1.jpg" alt="Amazonトップ右上のアカウント名の位置" width="1000" height="142">
-    </li>
-    <li>
-      <h3>「ほしい物リスト」を選ぶ</h3>
-      <p>開いたメニューの「アカウントサービス」にある「ほしい物リスト」をタップします。</p>
-      <img src="img/step2.jpg" alt="メニュー内の「ほしい物リスト」" width="1000" height="555" loading="lazy">
-    </li>
-    <li>
-      <h3>右上の「＋」をタップ</h3>
-      <p>「購入品リストとレジストリ」の見出しの右にある丸い「＋」ボタンをタップします。</p>
-      <img src="img/step3.jpg" alt="「購入品リストとレジストリ」右の＋ボタン" width="1000" height="95" loading="lazy">
-    </li>
-    <li>
-      <h3>リスト名を入れて「リストを作成」</h3>
-      <p>リスト名を入力し、黄色の「リストを作成」ボタンをタップします。名前は後から変更できます。</p>
-      <img src="img/step4.jpg" alt="リスト名の入力欄と「リストを作成」ボタン" width="1000" height="364" loading="lazy">
-    </li>
-    <li>
       <h3>リスト右上の「…」をタップ</h3>
-      <p>作成したリストが開きます。招待の前に名前の設定を変えるので、右上の「…」ボタンをタップします。</p>
+      <p>ほしい物リストの画面で、右上の「…」ボタンをタップします。招待の前に名前の設定を変えるためです。</p>
       <img src="img/step-menu.jpg" alt="リスト右上の「…」ボタン" width="1000" height="193" loading="lazy">
     </li>
     <li>
@@ -127,6 +110,33 @@
       <p>表示された招待リンクをコピーし、LINEやメールで相手に送れば完了です。</p>
     </li>
   </ol>
+
+  <details class="fallback">
+    <summary>リストがまだない・新しく作りたい場合</summary>
+    <p>リンクを開いてもリストが出ないときや、共有用に別のリストを作りたいときは、先に次の手順でリストを作ってから、上の手順1に進んでください。</p>
+    <ol class="steps">
+    <li>
+      <h3>右上のアカウント名をタップ</h3>
+      <p><a href="https://www.amazon.co.jp/" target="_blank" rel="noopener">Amazonトップ</a>の右上にある「○○さん」と人型アイコンの部分をタップします。</p>
+      <img src="img/step1.jpg" alt="Amazonトップ右上のアカウント名の位置" width="1000" height="141" loading="lazy">
+    </li>
+    <li>
+      <h3>「ほしい物リスト」を選ぶ</h3>
+      <p>開いたメニューの「アカウントサービス」にある「ほしい物リスト」をタップします。</p>
+      <img src="img/step2.jpg" alt="メニュー内の「ほしい物リスト」" width="1000" height="555" loading="lazy">
+    </li>
+    <li>
+      <h3>右上の「＋」をタップ</h3>
+      <p>「購入品リストとレジストリ」の見出しの右にある丸い「＋」ボタンをタップします。</p>
+      <img src="img/step3.jpg" alt="「購入品リストとレジストリ」右の＋ボタン" width="1000" height="95" loading="lazy">
+    </li>
+    <li>
+      <h3>リスト名を入れて「リストを作成」</h3>
+      <p>リスト名を入力し、黄色の「リストを作成」ボタンをタップします。名前は後から変更できます。</p>
+      <img src="img/step4.jpg" alt="リスト名の入力欄と「リストを作成」ボタン" width="1000" height="364" loading="lazy">
+    </li>
+    </ol>
+  </details>
 
   <h2>補足</h2>
   <table>
