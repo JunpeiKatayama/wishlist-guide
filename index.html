@@ -49,6 +49,7 @@
     background: var(--accent); color: #fff; font-size: .9em;
     display: inline-flex; align-items: center; justify-content: center; margin-top: .05em;
   }
+  ol.steps > li.important { border: 2px solid var(--accent); }
   ol.steps p { margin: 0; }
   ol.steps img {
     display: block; width: 100%; height: auto; margin-top: 14px;
@@ -69,9 +70,9 @@
   <p class="lead">スマホのブラウザでAmazonを開き、ほしい物リストを新しく作って、一緒に編集できる招待リンクを送るまでの手順です。所要時間は2〜3分です。</p>
 
   <div class="start">
-    <p>下のボタンを開くと、手順3の「購入品リストとレジストリ」画面に直接入れます。Amazonにログインした状態で開いてください。</p>
-    <a class="btn" href="https://www.amazon.co.jp/hz/wishlist/ls" target="_blank" rel="noopener">ほしい物リストのページを開く</a>
-    <small>うまく開かないときは、<a href="https://www.amazon.co.jp/" target="_blank" rel="noopener">Amazonトップ</a>から手順1の通りに進めば同じ画面に着きます。</small>
+    <p>まずAmazonのトップを開き、ログインした状態で手順1から進めてください。</p>
+    <a class="btn" href="https://www.amazon.co.jp/" target="_blank" rel="noopener">Amazonを開く</a>
+    <small>すでにあるリストを見たいときは<a href="https://www.amazon.co.jp/hz/wishlist/ls" target="_blank" rel="noopener">ほしい物リストのページ</a>から。こちらは既定のリストが開くので、新しく作る場合は手順1からどうぞ。</small>
   </div>
 
   <h2>手順</h2>
@@ -97,8 +98,23 @@
       <img src="img/step4.jpg" alt="リスト名の入力欄と「リストを作成」ボタン" width="1000" height="364" loading="lazy">
     </li>
     <li>
+      <h3>リスト右上の「…」をタップ</h3>
+      <p>作成したリストが開きます。招待の前に名前の設定を変えるので、右上の「…」ボタンをタップします。</p>
+      <img src="img/step-menu.jpg" alt="リスト右上の「…」ボタン" width="1000" height="193" loading="lazy">
+    </li>
+    <li>
+      <h3>「リストの設定」を選ぶ</h3>
+      <p>開いたメニューから「リストの設定」をタップします。</p>
+      <img src="img/step-settings.jpg" alt="メニュー内の「リストの設定」" width="1000" height="379" loading="lazy">
+    </li>
+    <li class="important">
+      <h3>「受取人」を見られていい名前に変える</h3>
+      <p><strong>大事な手順です。</strong>「受取人」には最初、Amazonに登録した本名が入っています。この名前はリストを開いた相手に見えるので、ニックネームなど見られていい名前に書き換え、右上の「変更を保存」をタップします。</p>
+      <img src="img/step-name.jpg" alt="「リストを管理」画面の受取人欄と「変更を保存」ボタン" width="1000" height="455" loading="lazy">
+    </li>
+    <li>
       <h3>「招待」をタップ</h3>
-      <p>作成したリストが開くので、リスト名の下にある「招待」ボタンをタップします。</p>
+      <p>リストの画面に戻り、リスト名の下にある「招待」ボタンをタップします。</p>
       <img src="img/step5.jpg" alt="リスト名の下の「招待」ボタン" width="1000" height="355" loading="lazy">
     </li>
     <li>
